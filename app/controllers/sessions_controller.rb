@@ -9,5 +9,9 @@ class SessionsController < ApplicationController
     redirect_to 'show'
   end
 
+  private
 
+  def require_login
+    redirect_to '/new' unless session.include? :name
+  end
 end
