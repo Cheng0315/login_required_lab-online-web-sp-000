@@ -2,9 +2,9 @@ class SecretsController < ApplicationController
   before_action
   def show
     if !session[:name]
-      redirect_to '/login' 
+      redirect_to '/login'
     else
-      
+
     end
   end
 
