@@ -11,5 +11,4 @@ class SessionsController < ApplicationController
     redirect_to 'show'
   end
 
-
 end
