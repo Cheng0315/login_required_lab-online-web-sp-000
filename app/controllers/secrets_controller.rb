@@ -5,4 +5,9 @@ class SecretsController < ApplicationController
     @user = session[:name]
   end
 
+  private
+
+  def require_login
+    redirect_to '/new' unless session.include? :name
+  end
 end
